@@ -1,18 +1,19 @@
 .home{
     font-family: Arial, Helvetica, sans-serif;
-   background-image: url("https://img.freepik.com/vecteurs-libre/fond-connexion-reseau-style-degrade_23-2148879891.jpg?t=st=1734717991~exp=1734721591~hmac=159add1e67d676c5b87a1893790c84f1c8239849693312bca105fdc5ff9a2785&w=740");
+   background-image: url("https://img.freepik.com/photos-gratuite/nature-morte-livres-contre-technologie_23-2150062913.jpg?t=st=1734719985~exp=1734723585~hmac=4df2543adddd68bd65c29ebefb38fc212d808ea5f379c0f9e7b0e42928655f68&w=740");
     background-size: cover;
     background-position:center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-   
+    margin-top:15%;
 }
-.home header{
-    
-    padding: 100px 20px ;
-}
-.home header h1{
-    font-size: 1.5rem;
-    color:red;
+
+.home  h1{
+    font-size: 2.5rem;
+    color: rgb(214, 49, 49); 
     
 }
 .home header p{
@@ -23,9 +24,42 @@
     background-color: rgba(0, 86, 179, 0.8);
 }
 .learn-more {
-    background-color: rgba(0, 128, 225, 0.8);
+    background-color: rgba(5, 53, 90, 0.8);
     color: white;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
 }
+.navigation {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(0, 0, 0, 0.3) ; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 60px;
+   
+  }
+  
+  .navigation li {
+    font-size: 1rem;
+  }
+  
+  .navigation a {
+    text-decoration: none;
+    color: rgb(214, 49, 49); 
+    font-weight: bold;
+    padding: 10px 15px; 
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navigation a:hover {
+    background-color: #0056B3;
+  }

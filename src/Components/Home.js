@@ -4,20 +4,18 @@ import './Home.css'
 const Home=() =>{
   return (
     <body className='home'>
-        <div  >
+    <nav>
+        <ul className="navigation">
+          <li><Link to="/details">About This Project</Link></li>
+          <li><Link to="/contact">Contact Me</Link></li>
+        </ul>
+      </nav>
     
-    <header>
-    <h1>Welcome to My React Project</h1>
+      <h1>Welcome to My React Project</h1>
       <p>Explore various styling techniques and design elements implemented in this portfolio.</p>
-          <button className="learn-more" onClick={() => alert("Let's dive into the details!")}>Learn More</button>
-    </header>
+      <button className="learn-more" onClick={() => alert('Let’s dive into the details!')}>Learn More</button>
+   
     
-        <ul>
-      <li><Link to="/details">About Me</Link></li>
-      <li><Link to="/contact">Contact</Link></li>
-    </ul>
-    
-</div>
     </body>
     
   )

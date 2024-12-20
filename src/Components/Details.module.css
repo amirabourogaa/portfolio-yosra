@@ -1,0 +1,36 @@
+.details {
+    background-image: url("https://img.freepik.com/vecteurs-libre/fond-futuriste-degrade-geometrique_23-2149116406.jpg?t=st=1734721509~exp=1734725109~hmac=a3bcce9008936b6176e18d01c2ff95c3911992d86c8fea0a05e10ae5a5ec8cc7&w=740");
+    background-size: cover;
+    background-position:center;
+    text-align: center;
+    color: white;
+    margin: 0;
+  }
+  .details h1 {
+    font-size: 2.5rem;
+    color: #007BFF;
+    margin-bottom: 10px;
+  }
+  .details h2 {
+    font-size: 2rem;
+    color: #0056B3;
+    
+  }
+  
+  .details p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  .list li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    text-align: left;
+  }
