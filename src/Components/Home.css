@@ -1,0 +1,19 @@
+.home{
+    font-family: Arial, Helvetica, sans-serif;
+   text-align: center;
+   
+}
+.home header{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGZ7BE6aP6KUGKpl9wV4H7z119O9xMOrUL8g&s");
+    background-size: cover;
+    background-position:center;
+    padding: 100px 20px ;
+}
+.home header h1{
+    font-size: 1.5rem;
+    color:red;
+}
+.home header p{
+    font-size: 1rem;
+    color: white
+}
