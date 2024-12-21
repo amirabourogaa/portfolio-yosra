@@ -1,32 +1,43 @@
-.home{
-    font-family: Arial, Helvetica, sans-serif;
-   background-image: url("https://img.freepik.com/photos-gratuite/nature-morte-livres-contre-technologie_23-2150062913.jpg?t=st=1734719985~exp=1734723585~hmac=4df2543adddd68bd65c29ebefb38fc212d808ea5f379c0f9e7b0e42928655f68&w=740");
-    background-size: cover;
-    background-position:center;
-    display: flex;
-    flex-direction: column;
-    margin-top:15%;
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url("https://img.freepik.com/photos-gratuite/nature-morte-livres-contre-technologie_23-2150062913.jpg?t=st=1734719985~exp=1734723585~hmac=4df2543adddd68bd65c29ebefb38fc212d808ea5f379c0f9e7b0e42928655f68&w=740");
+  background-size: cover;
+  background-position:center;
+  padding-top: 120px;
 }
 
-.home  h1{
-    font-size: 2.5rem;
-    color: rgb(214, 49, 49); 
-    
+
+.main-content {
+  flex: 1; 
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 0;
 }
-.home header p{
-    font-size: 1.2rem;
-    color: white;
+ h1{
+  font-size: 2.5rem;
+  color: rgb(214, 49, 49);
 }
-.learn-more:hover{
-    background-color: rgba(0, 86, 179, 0.8);
+body.home {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
 }
-.learn-more {
-    background-color: rgba(5, 53, 90, 0.8);
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
+
+nav {
+  background-color: #333;
+  
 }
+
+.navigation {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
 .navigation {
     list-style-type: none;
     margin: 0;
@@ -43,14 +54,10 @@
     height: 60px;
    
   }
-  
-  .navigation li {
-    font-size: 1rem;
-  }
-  
-  .navigation a {
+
+.navigation a {
     text-decoration: none;
-    color: rgb(214, 49, 49); 
+    color: rgb(214, 49, 49);
     font-weight: bold;
     padding: 10px 15px; 
     border-radius: 5px;
@@ -60,70 +67,108 @@
   .navigation a:hover {
     background-color: #0056B3;
   }
-  .footer {
-    background-color: #333;
-   color: white;
-  padding: 40px 0;
+
+.navigation a:hover {
+  text-decoration: underline;
+}
+
+.learn-more {
+  padding: 10px 20px;
+  background-color:rgb(214, 49, 49);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.learn-more:hover {
+  background-color: rgb(214, 49, 49);
+}
+
+/* Footer */
+.footer {
+  background-color: #222;
+  color: white;
+  padding: 20px;
   text-align: center;
-  margin-top: auto; 
-  }
-  .footer-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-  }
-  form {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
-  input {
-    padding: 10px;
-    font-size: 1rem;
-    border-radius: 5px;
-    border: none;
-    margin-right: 10px;
-    width: 250px;
-  }
- .submit button {
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-  }
-  .submit button:hover {
-    background-color: #0056B3;
-  }
-  .icons {
-    display: flex;
-    gap: 20px;
-    margin-bottom: 20px;
-  }
-  .icon:hover {
-    color: #007BFF;
-  }
-  .about p {
-    max-width: 600px;
-    margin: 0 auto;
-    font-size: 1rem;
-    line-height: 1.6;
-  }  
-  @media (max-width: 768px) {
-    .home {
-      font-size: 1.5rem; 
-    }
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 0 20px;
   
-    .navigation {
-      flex-direction: column;
-      gap: 10px;
-      padding: 10px;
-    }
-  
-    .footer {
-      padding: 20px 0;
-    }
-  }
+}
+.footer-section {
+  max-width: 250px;
+  margin: 10px;
+}
+
+.footer h3 {
+  color: rgb(214, 49, 49);
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+}
+.footer-section a{
+  text-decoration: none;
+  color:rgb(214, 49, 49) ;
+}
+.footer-section ul li a:hover {
+  color: rgb(214, 49, 49);
+}
+
+.footer form {
+  margin-top: 40px;
+}
+
+.footer input {
+  padding: 10px;
+  width: 200px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.footer .submit {
+  padding: 10px 20px;
+  background-color: rgb(214, 49, 49);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer .submit:hover {
+  background-color: #230ec4;
+}
+
+.social-links {
+  margin-top: 20px;
+}
+
+.social-links .icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-links .icon {
+  color: white;
+  text-decoration: none;
+}
+
+.social-links .icon:hover {
+  color: rgb(214, 49, 49);
+}

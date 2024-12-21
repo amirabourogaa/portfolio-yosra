@@ -15,51 +15,102 @@ const Home=() =>{
 }
 
   return (
- <body className='home'>
+    <div className="page-container">
+   
     <nav>
-        <ul className="navigation">
-          <li><Link to="/details">About This Project</Link></li>
-          <li><Link to="/contact">Contact Me</Link></li>
-        </ul>
-      </nav>
- <main>
+      <ul className="navigation">
+        <li>
+          <Link to="/details">About This Project</Link>
+        </li>
+        <li>
+          <Link to="/contact">Contact Me</Link>
+        </li>
+      </ul>
+    </nav>
+
+    
+    <main className="main-content">
       <h1>Welcome to My React Project</h1>
       <p>Explore various styling techniques and design elements implemented in this portfolio.</p>
-      <button className="learn-more" onClick={() => alert('Let’s dive into the details!')}>Learn More</button>
- </main>
- <footer className='footer'>
-    <form onSubmit={handleSubmit}>
-            <input type='email' placeholder='Enter your email address' value={email}/>
-            <button type="submit" className='submit'>Sign Up</button>
-    </form>
-    <section className="social-links">
-          <h3>Follow Us</h3>
-          <div className="icons">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="icon">
-              <FaFacebook size={30} />
-            </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="icon">
-              <FaInstagram size={30} />
-            </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="icon">
-              <FaTwitter size={30} />
-            </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="icon">
-              <FaLinkedin size={30} />
-            </a>
-          </div>
-          <section className="about">
-          <h3>More Info</h3>
+      <button
+        className="learn-more"
+        onClick={() => alert("Let's dive into the details!")}
+      >
+        Learn More
+      </button>
+    </main>
+    <footer className="footer">
+    <div className="footer-section ">
           <p>
-            This website is a portfolio showcasing various web development and design techniques.
-            The goal is to create an interactive experience while demonstrating technical skills.
+            <h3><strong>Contact Us:</strong></h3>
+            <br />
+            +216 53 013 518 
+            <br />
+           <a href='https://mail.google.com/mail/u/0/'>yossrabenmansour53@gmail.com</a>
           </p>
-        </section>
-        </section>
-
- </footer>
+        </div>
+       <div className="footer-section">
+          <h3>Information</h3>
+          <ul>
+            <li><a href='http://localhost:3000/details'>About Us</a></li>
+            <li><a href='http://localhost:3000/details'>More Search</a></li>
+            <li><a href='http://localhost:3000/details' >Blog</a></li>
+          
+          </ul>
+        </div>
     
-    </body>
+    <section className="social-links">
+        <h3>Follow Us</h3>
+        <div className="icons">
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="icon"
+          >
+            <FaFacebook size={30} />
+          </a>
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="icon"
+          >
+            <FaInstagram size={30} />
+          </a>
+          <a
+            href="https://twitter.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="icon"
+          >
+            <FaTwitter size={30} />
+          </a>
+          <a
+            href="https://linkedin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="icon"
+          >
+            <FaLinkedin size={30} />
+          </a>
+        </div>
+    </section>
+        
+     
+    <form onSubmit={handleSubmit}>
+        <input
+          type="email"
+          placeholder="Enter your email address"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
+        <button type="submit" className="submit">
+          Sign Up
+        </button>
+      </form>
+    </footer>
+  </div>
     
   )
 }
