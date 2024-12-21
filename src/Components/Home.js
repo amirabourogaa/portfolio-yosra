@@ -38,6 +38,7 @@ const Home=() =>{
     <main className="main-content">
       <h1>Welcome to My React Project</h1>
       <p>Explore various styling techniques and design elements implemented in this portfolio.</p>
+      <p>Modification Amira</p>
       <button
         className="learn-more"
         onClick={() => alert("Let's dive into the details!")}
