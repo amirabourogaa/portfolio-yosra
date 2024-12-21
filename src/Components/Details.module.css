@@ -1,10 +1,19 @@
 .details {
-    background-image: url("https://img.freepik.com/vecteurs-libre/fond-futuriste-degrade-geometrique_23-2149116406.jpg?t=st=1734721509~exp=1734725109~hmac=a3bcce9008936b6176e18d01c2ff95c3911992d86c8fea0a05e10ae5a5ec8cc7&w=740");
+    background-image: url("https://img.freepik.com/vecteurs-libre/contexte-technologique-futuriste_52683-35442.jpg?t=st=1734780188~exp=1734783788~hmac=ab34498ab70dd60097f6b1702cb6f67944bea5146e336ff89df71ae9c0c34e0a&w=740");
+    background-attachment: fixed;
     background-size: cover;
     background-position:center;
     text-align: center;
     color: white;
     margin: 0;
+    width: 100vw; 
+    height: 100vh; 
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    
+     
   }
   .details h1 {
     font-size: 2.5rem;
@@ -27,10 +36,24 @@
     list-style-type: none;
     padding: 0;
     margin: 0;
+    width: 300px;
+    border-radius: 8px;
   }
+ 
   .list li {
-    font-size: 1rem;
     margin-bottom: 10px;
     padding: 10px 15px;
-    text-align: left;
+    text-align: center;
+    padding: 10px; 
+    border-bottom: 1px solid #ccc; 
+    font-size: 1rem; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   
+    
+  }
+  .list li::before{
+    content:  "✔";
+    color: #3498db;
+    font-size: 20px;
+
   }

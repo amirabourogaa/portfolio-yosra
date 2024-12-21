@@ -3,16 +3,22 @@ import { Link } from 'react-router-dom'
 import './Home.css'
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
 const Home=() =>{
-    const [email,setEmail]=useState();
-    const handleSubmit=(e)=>{
-        e.preventDefault();
-        if (email) {
-            localStorage.setItem('userEmail', email);
-            setEmail('');
-          } else {
-            alert('Please enter a valid email')
+  const [email, setEmail] = useState("");
+  const [emailsList, setEmailsList] = useState(
+    JSON.parse(localStorage.getItem("newsletterEmails")) || []
+  );
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (email && !emailsList.includes(email)) {
+      const updatedList = [...emailsList, email];
+      setEmailsList(updatedList);
+      localStorage.setItem("newsletterEmails", JSON.stringify(updatedList));
+      setEmail("");
+      alert("Email ajouté avec succès !");
+    } else {
+      alert("Veuillez entrer un email valide ou l'email existe déjà.");
     }
-}
+  };
 
   return (
     <div className="page-container">
@@ -41,13 +47,12 @@ const Home=() =>{
     </main>
     <footer className="footer">
     <div className="footer-section ">
-          <p>
             <h3><strong>Contact Us:</strong></h3>
             <br />
             +216 53 013 518 
             <br />
            <a href='https://mail.google.com/mail/u/0/'>yossrabenmansour53@gmail.com</a>
-          </p>
+
         </div>
        <div className="footer-section">
           <h3>Information</h3>
